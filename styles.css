@@ -1,0 +1,38 @@
+:root {
+  box-sizing: border-box;
+
+  --header-footer-color: #FFFFFF;
+  --main-content-color: #313131;
+  --font-color-1: #000000;
+  --font-color-2: #FFFFFF;
+}
+
+header {
+  background-color: var(--header-footer-color);
+  display: flex;
+  flex-direction: row;
+}
+
+#header-image {
+  width: 100px;
+}
+
+main {
+  background-color: var(--main-content-color);
+}
+
+footer {
+  background-color: var(--header-footer-color);
+}
+
+
+#footer-link-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#footer-link-icons img {
+  width: 40px;
+
+}
