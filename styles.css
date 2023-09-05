@@ -20,13 +20,17 @@
   --main-content-color: #313131;
   --font-color-1: #000000;
   --font-color-2: #FFFFFF;
+  --max-content-width: 1200px;
 }
 
 html, body {
   font-family: openSans;
-  max-width: 1200px;
-  margin-left: auto;
+}
+
+header, main, footer {
+  max-width: var(--max-content-width);
   margin-right: auto;
+  margin-left: auto;
 }
 
 header {
@@ -39,7 +43,6 @@ header {
 }
 
 main {
-  background-color: var(--main-content-color);
   color: var(--font-color-2);
 }
 
@@ -67,6 +70,14 @@ h3 {
   font-size: 24px;
 }
 
+#main-bg {
+  background-color: var(--main-content-color);
+}
+
+#header-bg, #footer-bg {
+  background-color: var(--header-footer-color);
+}
+
 #header-text {
   display: flex;
   flex-direction: column;
@@ -74,7 +85,7 @@ h3 {
 }
 
 #header-image {
-  width: 150px;
+  width: 200px;
   height: auto;
   border-radius: 10px;
 }
@@ -87,5 +98,4 @@ h3 {
 
 #footer-link-icons img {
   width: 35px;
-
 }
