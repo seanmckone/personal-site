@@ -1,3 +1,18 @@
+@font-face {
+  font-family: openSans;
+  src: url(Resources/Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: openSansItalic;
+  src: url(Resources/Fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf);
+}
+
+@font-face {
+  font-family: firaCode;
+  src: url(Resources/Fonts/Fira_Code/FiraCode-VariableFont_wght.ttf);
+}
+
 :root {
   box-sizing: border-box;
 
@@ -7,24 +22,62 @@
   --font-color-2: #FFFFFF;
 }
 
+html, body {
+  font-family: openSans;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header {
   background-color: var(--header-footer-color);
   display: flex;
   flex-direction: row;
-}
-
-#header-image {
-  width: 100px;
+  height: 300px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 main {
   background-color: var(--main-content-color);
+  color: var(--font-color-2);
 }
 
 footer {
   background-color: var(--header-footer-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 200px;
 }
 
+h1 {
+  font-family: firaCode;
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: firaCode;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+#header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#header-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
 
 #footer-link-icons {
   display: flex;
@@ -33,6 +86,6 @@ footer {
 }
 
 #footer-link-icons img {
-  width: 40px;
+  width: 35px;
 
 }
