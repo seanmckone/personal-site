@@ -44,6 +44,7 @@ header {
 
 main {
   color: var(--font-color-2);
+  height: 1000px;
 }
 
 footer {
@@ -56,18 +57,36 @@ footer {
   height: 200px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 h1 {
   font-family: firaCode;
   font-size: 64px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-family: firaCode;
+}
+
+main h2 {
+  padding: 100px 0px;
 }
 
 h3 {
   font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--font-color-2);
 }
 
 #main-bg {
@@ -98,4 +117,22 @@ h3 {
 
 #footer-link-icons img {
   width: 35px;
+}
+
+#tool-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 60px;
+}
+
+.tool-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.tool-icon-image {
+  height: 100px;
+  border-radius: 8px;
 }
