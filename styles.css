@@ -40,9 +40,10 @@ header {
   background-color: var(--header-footer-color);
   display: flex;
   flex-direction: row;
-  height: 300px;
   align-items: center;
   justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 main {
@@ -86,8 +87,7 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
   color: var(--font-color-2);
 }
 
@@ -127,17 +127,17 @@ p {
 
 #tool-icon-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   justify-content: space-between;
-  row-gap: 50px;
+  gap: 50px;
 }
 
 #project-grid {
   padding-bottom: 200px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: space-between;
-  row-gap: 60px;
+  gap: 40px;
 }
 
 .tool-icon {
@@ -145,18 +145,16 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 120px;
   justify-self: center;
 }
 
 .tool-icon-image {
-  border-radius: 8px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
 
 .project-icon {
   background-color: var(--header-footer-color);
-  width: 330px;
   height: 450px;
   border-radius: 10px;
   display: flex;
@@ -167,4 +165,30 @@ p {
 
 .project-info h2, .project-info p {
   color: var(--font-color-1);
+}
+
+@media (max-width: 1000px) {
+  #tool-icon-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  #tool-icon-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #project-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  header {
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 20px;
+  }
 }
