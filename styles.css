@@ -190,7 +190,7 @@ p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   #tool-icon-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
