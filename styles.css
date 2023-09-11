@@ -78,7 +78,7 @@ h2 {
   font-family: firaCode;
 }
 
-main h2 {
+section > h2 {
   padding: 100px 0px;
 }
 
@@ -154,13 +154,24 @@ p {
 }
 
 .project-icon {
-  background-color: var(--header-footer-color);
-  height: 450px;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
+}
+
+.project-image {
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid var(--main-content-color);
+}
+
+.project-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  background-color: var(--header-footer-color);
+  border-radius: 0px 0px 10px 10px;
 }
 
 .project-info h2, .project-info p {
@@ -190,5 +201,15 @@ p {
     height: 100vh;
     flex-direction: column;
     padding-top: 20px;
+    margin: 0px;
+    padding-bottom: 40px;
   }
+
+  #header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  
 }
