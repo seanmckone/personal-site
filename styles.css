@@ -58,7 +58,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  height: 250px;
+  padding: 50px 0px;
 }
 
 a:link {
